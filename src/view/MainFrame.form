@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="view.MainFrame">
+  <grid id="27dc6" binding="mainPanel" layout-manager="FormLayout">
+    <rowspec value="center:max(d;4px):noGrow"/>
+    <rowspec value="top:20dlu:noGrow"/>
+    <rowspec value="center:max(d;4px):noGrow"/>
+    <rowspec value="top:4dlu:noGrow"/>
+    <rowspec value="center:max(d;4px):noGrow"/>
+    <rowspec value="top:4dlu:noGrow"/>
+    <rowspec value="center:d:noGrow"/>
+    <rowspec value="top:4dlu:noGrow"/>
+    <rowspec value="center:max(d;4px):noGrow"/>
+    <rowspec value="top:4dlu:noGrow"/>
+    <rowspec value="center:max(d;4px):noGrow"/>
+    <rowspec value="top:6dlu:noGrow"/>
+    <rowspec value="center:max(d;4px):noGrow"/>
+    <rowspec value="top:8dlu:noGrow"/>
+    <rowspec value="center:51px:noGrow"/>
+    <rowspec value="center:d:grow"/>
+    <rowspec value="top:4dlu:noGrow"/>
+    <rowspec value="center:max(d;4px):noGrow"/>
+    <rowspec value="center:p:noGrow"/>
+    <colspec value="fill:max(d;4px):noGrow"/>
+    <colspec value="left:17dlu:noGrow"/>
+    <colspec value="fill:209px:noGrow"/>
+    <colspec value="left:6dlu:noGrow"/>
+    <colspec value="fill:372px:grow"/>
+    <colspec value="fill:29px:noGrow"/>
+    <colspec value="left:4dlu:noGrow"/>
+    <constraints>
+      <xy x="26" y="22" width="682" height="700"/>
+    </constraints>
+    <properties>
+      <background color="-15195600"/>
+      <minimumSize width="600" height="700"/>
+    </properties>
+    <border type="etched"/>
+    <children>
+      <component id="1e078" class="javax.swing.JLabel" binding="nameApp">
+        <constraints>
+          <grid row="6" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <forms defaultalign-horz="false"/>
+        </constraints>
+        <properties>
+          <background color="-15195600"/>
+          <font name="Segoe Print" size="24" style="1"/>
+          <foreground color="-2104859"/>
+          <iconTextGap value="1"/>
+          <maximumSize width="300" height="250"/>
+          <text value="ToDo App"/>
+        </properties>
+      </component>
+      <vspacer id="d5f2c">
+        <constraints>
+          <grid row="0" column="0" row-span="19" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+          <forms defaultalign-vert="false"/>
+        </constraints>
+      </vspacer>
+      <component id="ecaca" class="javax.swing.JLabel" binding="sloganApp">
+        <constraints>
+          <grid row="10" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <forms/>
+        </constraints>
+        <properties>
+          <autoscrolls value="false"/>
+          <background color="-15195600"/>
+          <font name="Segoe Print" size="12" style="3"/>
+          <foreground color="-525057"/>
+          <text value="Write everything, forget nothing"/>
+        </properties>
+      </component>
+      <grid id="f63b7" binding="projectsPanel" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="3">
+        <constraints>
+          <grid row="14" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <forms/>
+        </constraints>
+        <properties>
+          <background color="-525057"/>
+        </properties>
+        <border type="bevel-raised"/>
+        <children>
+          <component id="271fe" class="javax.swing.JTextPane" binding="projectsTextPane" default-binding="true">
+            <constraints/>
+            <properties>
+              <background color="-525057"/>
+              <caretColor color="-16777216"/>
+              <font name="Segoe Print" size="14" style="1"/>
+              <foreground color="-16777216"/>
+              <selectedTextColor color="-16777216"/>
+              <text value="Projects        "/>
+            </properties>
+          </component>
+          <component id="b0d21" class="javax.swing.JButton" binding="addProjectButton">
+            <constraints/>
+            <properties>
+              <font name="Segoe Print" size="13" style="1"/>
+              <text value="+"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="ec636" binding="listOfProjectsPanel" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+        <constraints>
+          <grid row="15" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <forms defaultalign-vert="false"/>
+        </constraints>
+        <properties>
+          <background color="-525057"/>
+        </properties>
+        <border type="bevel-raised"/>
+        <children>
+          <component id="7c9fe" class="javax.swing.JList" binding="listaProjects">
+            <constraints/>
+            <properties>
+              <background color="-525057"/>
+              <fixedCellHeight value="-1"/>
+              <fixedCellWidth value="-1"/>
+              <focusCycleRoot value="false"/>
+              <font name="Segoe Print" size="10" style="1"/>
+              <foreground color="-16777216"/>
+              <layoutOrientation value="0"/>
+              <maximumSize width="14" height="14"/>
+              <minimumSize width="14" height="14"/>
+              <model>
+                <item value="item 1"/>
+                <item value="item 2"/>
+                <item value="item 3"/>
+                <item value="item 4"/>
+              </model>
+              <preferredSize width="200" height="260"/>
+              <selectionMode value="0"/>
+              <toolTipText value=""/>
+              <valueIsAdjusting value="false"/>
+              <verifyInputWhenFocusTarget value="false"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="a1702" binding="tasksPanel" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="3">
+        <constraints>
+          <grid row="14" column="4" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <forms defaultalign-horz="false" defaultalign-vert="false"/>
+        </constraints>
+        <properties>
+          <autoscrolls value="false"/>
+          <background color="-525057"/>
+          <name value=""/>
+        </properties>
+        <border type="bevel-raised"/>
+        <children>
+          <component id="7b9d9" class="javax.swing.JTextPane" binding="tasksTextPane">
+            <constraints/>
+            <properties>
+              <background color="-525057"/>
+              <caretColor color="-16777216"/>
+              <disabledTextColor color="-10855069"/>
+              <doubleBuffered value="false"/>
+              <dragEnabled value="false"/>
+              <font name="Segoe Print" size="14" style="1"/>
+              <foreground color="-16777216"/>
+              <name value=""/>
+              <selectedTextColor color="-16777216"/>
+              <selectionColor color="-13745298"/>
+              <text value="Tasks               "/>
+            </properties>
+          </component>
+          <component id="74fed" class="javax.swing.JButton" binding="addTaskButton">
+            <constraints/>
+            <properties>
+              <font name="Segoe Print" size="13" style="1"/>
+              <text value="+"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="4afcb" binding="addAnTaskPanel" layout-manager="FormLayout">
+        <rowspec value="center:d:noGrow"/>
+        <colspec value="fill:d:grow"/>
+        <constraints>
+          <grid row="15" column="4" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <forms defaultalign-vert="false"/>
+        </constraints>
+        <properties>
+          <background color="-525057"/>
+        </properties>
+        <border type="bevel-raised"/>
+        <children>
+          <component id="ed83a" class="javax.swing.JTable" binding="table1" default-binding="true">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+              <forms defaultalign-vert="false"/>
+            </constraints>
+            <properties>
+              <autoCreateColumnsFromModel value="true"/>
+              <background color="-525057"/>
+              <cellSelectionEnabled value="true"/>
+              <columnSelectionAllowed value="true"/>
+              <dragEnabled value="false"/>
+              <font name="Segoe Print" size="10" style="1"/>
+              <foreground color="-16777216"/>
+              <gridColor color="-13745298"/>
+              <maximumSize width="2147483647" height="100"/>
+              <minimumSize width="60" height="70"/>
+            </properties>
+            <clientProperties>
+              <Table.isFileList class="java.lang.Boolean" value="false"/>
+            </clientProperties>
+          </component>
+        </children>
+      </grid>
+      <vspacer id="37166">
+        <constraints>
+          <grid row="1" column="5" row-span="17" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+          <forms defaultalign-vert="false"/>
+        </constraints>
+      </vspacer>
+      <hspacer id="711f8">
+        <constraints>
+          <grid row="17" column="1" row-span="1" col-span="4" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <forms defaultalign-horz="false"/>
+        </constraints>
+      </hspacer>
+    </children>
+  </grid>
+</form>
